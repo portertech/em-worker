@@ -7,9 +7,9 @@ Gem::Specification.new do |spec|
   spec.version       = "0.0.1"
   spec.authors       = ["Sean Porter"]
   spec.email         = ["portertech@gmail.com"]
-  spec.description   = %q{TODO: Write a gem description}
-  spec.summary       = %q{TODO: Write a gem summary}
-  spec.homepage      = ""
+  spec.description   = "Provides a simple task worker, with a task concurrency limit."
+  spec.summary       = "Provides a simple task worker, with a task concurrency limit."
+  spec.homepage      = "https://github.com/portertech/em-worker"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
