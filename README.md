@@ -1,6 +1,6 @@
 # EM::Worker
 
-`EM::Worker` provides a simple task worker, with a task concurrency limit. Tasks are executed in the EventMachine threadpool.
+Provides a simple task worker for EventMachine, with a task concurrency limit. Tasks are executed in the EventMachine threadpool.
 
 [![Build Status](https://secure.travis-ci.org/portertech/em-worker.png)](https://travis-ci.org/portertech/em-worker)
 
@@ -20,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-```
+``` ruby
   @worker = EM::Worker.new(:concurrency => 12) # defaults to 10
 
   @worker.enqueue do
