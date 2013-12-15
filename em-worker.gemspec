@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "em-worker"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Sean Porter"]
   spec.email         = ["portertech@gmail.com"]
   spec.description   = "Provides a simple task worker, with a task concurrency limit."
