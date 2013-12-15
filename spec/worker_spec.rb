@@ -29,17 +29,17 @@ describe "EM::Worker" do
     end
   end
 
-  it "will do a maximum of 10 tasks at a time by default" do
+  it "will do a maximum of 12 tasks at a time by default" do
     @concurrency = Queue.new
     async_wrapper do
-      20.times do
+      24.times do
         @worker.enqueue do
           @concurrency << 1
           sleep 1000
         end
       end
       timer(1) do
-        @concurrency.size.should eql 10
+        @concurrency.size.should eql 12
         async_done
       end
     end

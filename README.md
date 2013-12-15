@@ -21,7 +21,7 @@ Or install it yourself as:
 ## Usage
 
 ``` ruby
-  @worker = EM::Worker.new(:concurrency => 12) # defaults to 10
+  @worker = EM::Worker.new(:concurrency => 16) # defaults to 12
 
   @worker.enqueue do
     puts "winning"

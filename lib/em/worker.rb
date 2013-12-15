@@ -4,7 +4,7 @@ module EM
   class Worker
     def initialize(options={})
       @task_queue = EM::Queue.new
-      @concurrency = options.fetch(:concurrency, 10)
+      @concurrency = options.fetch(:concurrency, 12)
       start
     end
 
