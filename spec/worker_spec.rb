@@ -45,7 +45,7 @@ describe "EM::Worker" do
     end
   end
 
-  it "will complete tasks in the correct order" do
+  it "will complete tasks" do
     @results = []
     async_wrapper do
       1000.times do |i|
@@ -57,7 +57,6 @@ describe "EM::Worker" do
       end
       timer(2) do
         @results.size.should eql 1000
-        @results.should eql @results.sort
         async_done
       end
     end
